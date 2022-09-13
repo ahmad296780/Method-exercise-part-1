@@ -1,19 +1,26 @@
 ﻿using System;
-using System.Globalization;
 
-namespace MethodExercise
+namespace Method_Exercise_part_2
 {
     internal class Program
     {
+        public static int Add(int num1, int num2)
+        {
+            return (num1 + num2);
+         }
+        public static double Multiply(double num1, double num2)
+        {
+            return (num1 * num2);
+        }
         static void Main(string[] args)
         {
-            Console.WriteLine("What is your name?");
-            string name = Console.ReadLine();
-            Console.WriteLine($"hi {name}, how are you? please tell me your favorite color");
-            string color = Console.ReadLine(); 
-            Console.WriteLine($"ok so your favorite color is {color}, what about animal?");
-            string animal = Console.ReadLine();
-            Console.WriteLine($"no problem i can provide you with best {animal}");
+            int x =Add(2, 5);// For my own test
+            int y =Add(2, 4);// for exercise
+            double a = Multiply(2, 10);
+            Console.WriteLine(y);
+            Console.WriteLine(a);
+            
+
             Console.ReadLine();
         }
     }
